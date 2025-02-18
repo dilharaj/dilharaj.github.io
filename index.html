@@ -25,11 +25,11 @@
             <!-- Center Content -->
             <div class="center-content">
                 <p><b>Aerospace engineer</b> specializing in <b>aerodynamics</b>, <b>aeroacoustics</b>, and <b>CFD</b> with expertise in <b>rotorcraft design</b>. 
-                    My passion lies in advancing cutting-edge technologies in <b>propulsion systems</b>, <b>noise control</b>, and <b>aerodynamic 
+                    Passionate about advancing cutting-edge technologies in <b>propulsion systems</b>, <b>noise control</b>, and <b>aerodynamic 
                     performance optimization</b>.
                 </p>
                 <br>
-                <p> I received my MS and PhD in Aerospace Engineering from the University of Maryland, under the guidance of Prof. James Baeder. My research focus was on the aeroacoustic implications of installed propeller interactional aerodynamics and transient propeller motions. 
+                <p> I earned my MS and PhD in Aerospace Engineering from the University of Maryland under the guidance of Prof. James Baeder, focusing on the <b>aeroacoustic implications of installed propeller interactional aerodynamics and transient propeller motions.</b> 
                     I completed my undergraduate studies in Civil Engineering at the University of Peradeniya, Sri Lanka.
                 </p>
 
@@ -67,10 +67,10 @@
                 <br>
                 <h2> Tip-Driven Ducted Rotor</h2>
                 <br>
-                <p> Open rotor and conventional ducted rotor propulsion systems are prone to inefficiencies at the blade tips as the high-pressure air at the bottom of the blade leak towards the low-pressure region at the top of the blade, forming a tip-vortex. 
-                    These blade tip-vortices not only reduce the performance of the propulsion system as they deprive the rotor of thrust at the most critical part of the blade, but also lead to high aircraft noise emissions as the vortices interact with other parts of the airframe or even the following blade.
-                    At MagLev Aero, we are working to resolve this issue by developing a tip-driven ducted rotor system that prevents the tip vortex formation. The CFD analysis I conducted using a Lattice Boltzmann Method (LBM) solver shows <b>more than 20% improvement in performance</b> compared to a conventional ducted rotor.
-                    The vorticity iso-surfaces for the two cases shown below is a visual testament to the enhancement in aerodynamic performance of the tip-driven propulsion system. For more details, visit <a href="https://maglevaero.com/" target="_blank" class="custom-link" rel="noopener noreferrer">MagLev Aero</a>.
+                <p> Open rotor and conventional ducted rotor propulsion systems suffer from inefficiencies at the blade tips due to high-pressure air leaking from the bottom of the blade to the low-pressure region at the top, forming a tip vortex. 
+                    These tip vortices reduce propulsion performance—depriving the rotor of thrust at the most critical part of the blade—and contribute to high aircraft noise emissions as they interact with other parts of the airframe or subsequent blades.
+                    At MagLev Aero, we address this issue by developing a tip-driven ducted rotor system that prevents tip vortex formation. My CFD analysis, conducted using a Lattice Boltzmann Method (LBM) solver, demonstrates <b> a more than 20% improvement in performance</b> compared to a conventional ducted rotor. 
+                    The vorticity iso-surfaces for the two cases shown below visually illustrate the aerodynamic performance enhancement of the tip-driven propulsion system. For more details, visit <a href="https://maglevaero.com/" target="_blank" class="custom-link" rel="noopener noreferrer">MagLev Aero</a>.
                 </p>
             </div>
             <br>
@@ -87,9 +87,9 @@
                 <br>
                 <h2> Quadrotor Biplane Tailsitter</h2>
                 <br>
-                <p> During the final years of my PhD, I analyzed the Common Research Configuration (CRC) quadrotor biplane tailsitter model using the in-house hybrid RANS-LES CFD solver Mercury to investigate its performance and the noise footprint in hover and forward flight. The aircraft was developed in a collaborative effort 
-                    between the University of Maryland and the U.S. Army Combat Capabilities Development Command Army Research Laboratory (ARL). This in-depth study revealed the intricacies of the rotor-airframe aerodynamic interaction and how it shapes the noise footprint of the aircraft. In an attempt to reduce the noise emissions of the
-                    aircraft, we resorted to synchrophasing of the rotors (rotors having predetermined phase offsets between each other), which showed success especially in hover.    
+                <p> During the final years of my PhD, I analyzed the Common Research Configuration (CRC) quadrotor biplane tailsitter model using the in-house hybrid RANS-LES CFD solver Mercury to assess its performance and the noise footprint in both hover and forward flight. 
+                    Developed through a collaboration between the University of Maryland and the U.S. Army Combat Capabilities Development Command Army Research Laboratory (ARL), this aircraft provided a unique platform to study rotor-airframe aerodynamic interactions and their impact on noise generation. 
+                    To mitigate noise emissions, we explored rotor synchrophasing—introducing predetermined phase offsets between rotors—which proved particularly effective in hover.    
                 </p>
             </div>
             <br>
@@ -115,9 +115,9 @@
                 <h2> Wingtip-Mounted Propeller</h2>
                 <br>
                 <p> 
-                    Among the first projects I undertook at Maryland was the CFD and aeroacoustic analysis of a wingtip-mounted propeller geometry, provided by the 1st Workshop for Integrated Propeller Predictions (WIPP). Our CFD predictions using the in-house solver perfectly matched the wind tunnel test data and the study emphasized the significance
-                     of the wing as an aircraft noise source when placed in the wake of a propeller. The noise footprint increases not only because of the interaction between the propeller wake and the wing but also due to the unsteadiness in the propeller blade loading caused by its interaction with the wing upwash. The noise foorptints given below shows 
-                     how the wing is louder than the propeller when the porpeller axis is aligned with the freestream.   
+                    Among the first projects I undertook at Maryland was the CFD and aeroacoustic analysis of a wingtip-mounted propeller geometry, provided by the 1st Workshop for Integrated Propeller Predictions (WIPP). Our CFD predictions using the in-house solver perfectly matched the wind tunnel test data and the study highlighted the significance
+                    of the wing as an aircraft noise source when placed in the wake of a propeller. The noise footprint increases not only due to the interaction between the propeller wake and the wing but also because of unsteady blade loading caused by the propeller’s interaction with the wing upwash. The noise footprints shown below illustrate that when the propeller axis is aligned with the freestream, 
+                    the wing generates more noise than the propeller itself.   
                 </p>
             </div>
             <br>
@@ -147,9 +147,9 @@
                 <h2> Transient Aeroacoustic Solver</h2>
                 <br>
                 <p> 
-                    Aircraft noise footprints are usually analyzed for periodic maneuvers such as hover and forward flight, and therefore, the acoustic solvers are designed to with the assumption of periodicity in the sound pressure signals. However, in the eVTOL era of aviation, noise footprints of non-periodic aircraft maneuvers also need to be analyzed as they are expected to occur in dense urban environments.
-                    To analyze such maneuvers, I developed a transient aeroacoustic solver (ACUM-3) using C++, CUDA, and MPI. The core computation was parallelied on GPU and parts of the time history was parallelized on multiple CPUs so that the computation can be run on an HPC to reduce the computation time. A new algorithm was developed to achieve the parallelization of the time dimension. The tool was used to analyze 
-                    the transient noise footprint of a propeller transitioning from hover to forward flight.  
+                    Aircraft noise footprints are typically analyzed for periodic maneuvers such as hover and forward flight, with acoustic solvers designed under the assumption of periodicity in sound pressure signals. However, in the eVTOL era, non-periodic maneuvers must also be considered, as they are expected to occur in dense urban environments. 
+                    To address this, I developed a transient aeroacoustic solver (ACUM-3) using C++, CUDA, and MPI. The core computations were parallelized on GPUs, while segments of the time history were distributed across multiple CPUs, enabling efficient execution on HPC systems to reduce computation time. 
+                    A novel algorithm was implemented to parallelize the time dimension, allowing for scalable and efficient processing. This tool was used to analyze the transient noise footprint of a propeller transitioning from hover to forward flight.  
 
                 </p>
             </div>
@@ -166,10 +166,10 @@
                 <h2> Alicorn and Horizon Aircraft</h2>
                 <br>
                 <p> 
-                    At Maryland, I led the graduate student design team at the 38<sup>th</sup> Vertical Flight Society (VFS) Student Design Competition and we won first place for our tandem rotor aircraft, Alicorn. We were asked to design an unmanned VTOL aircraft with a payload capacity of 50 kg and a range of 200 km for a medical equipment distribution mission. 
-                    Our team came up with a detailed engineering design amidst a Covid lockdown within a course of 15 weeks. I performed the aerodynamic design of the rotor system and the fuselage with a comprehensive CFD analysis that reduced the aircraft drag by 50%. For more information about the competition, <a href="https://eng.umd.edu/news/story/umd-teams-sweep-2021-vfs-student-design-competition" target="_blank" class="custom-link" rel="noopener noreferrer">click here</a>.   
+                    At Maryland, I led the graduate student design team in the 38<sup>th</sup> Vertical Flight Society (VFS) Student Design Competition, where we won first place for our tandem rotor aircraft, Alicorn. The challenge was to design an unmanned VTOL aircraft capable of carrying a 50 kg payload over a 200 km range for a medical equipment distribution mission. 
+                    Despite the constraints of the COVID lockdown, our team developed a detailed engineering design within 15 weeks. I was responsible for the aerodynamic design of the rotor system and fuselage, conducting comprehensive CFD analyses that reduced aircraft drag by 50%. For more information about the competition, <a href="https://eng.umd.edu/news/story/umd-teams-sweep-2021-vfs-student-design-competition" target="_blank" class="custom-link" rel="noopener noreferrer">click here</a>.   
                     <br><br>
-                    Furthermore, I participated in the 3<sup>rd</sup> VFS Design-Build-Vertical Flight (DBVF) Competition, where we designed and built the quadrotor tailsitter aircraft, Horizon. I conducted the aerodynamic design of the wings and through CFD, I improved the aircraft performance by optimizing the winglets for high-speed flight. We took second place in the competition. For more details,
+                    I also participated in the 3<sup>rd</sup> VFS Design-Build-Vertical Flight (DBVF) Competition, where we designed and built the quadrotor tailsitter aircraft Horizon. I led the aerodynamic design of the wings and, through CFD optimization, enhanced aircraft performance by refining the winglets for high-speed flight. Our team secured second place in the competition. For more details,
                      <a href="https://aero.umd.edu/news/story/umd-takes-second-at-vfs-designbuildverticalflight-competition" target="_blank" class="custom-link" rel="noopener noreferrer">click here</a>. 
                 </p>
             </div>
@@ -195,21 +195,21 @@
                 <br>
 
                 <ol>
-                    <li> Jayasundara, D., and Baeder, J., “Aerodynamic and Aeroacoustic Analysis of a Quadrotor Biplane Tailsitter” Journal of the American Helicopter Society (under review).</li>
-                    <li> Arias, P., Jayasundara, D. and Baeder, J., “Aeroacoustic Analysis of a Quadrotor Biplane Tailsitter in Climb and Synchrophased Hover”, 6<sup>th</sup> Decennial VFS Aeromechanics Specialists' Conference, Santa Clara, CA, February 2024.</li>
-                    <li> Jayasundara, D., Arias, P. and Baeder, J.D., “Multi-Fidelity Investigation of Noise Control Mechanisms for a Quadrotor Biplane Tailsitter in Forward Flight”, AIAA SCITECH Forum, Orlando, FL, January 2024.</li>
+                    <li> Jayasundara, D. and Baeder, J., “Aerodynamic and Aeroacoustic Analysis of a Quadrotor Biplane Tailsitter” Journal of the American Helicopter Society (under review).</li>
+                    <li> Arias, P., Jayasundara, D., and Baeder, J., “Aeroacoustic Analysis of a Quadrotor Biplane Tailsitter in Climb and Synchrophased Hover”, 6<sup>th</sup> Decennial VFS Aeromechanics Specialists' Conference, Santa Clara, CA, February 2024.</li>
+                    <li> Jayasundara, D., Arias, P., and Baeder, J.D., “Multi-Fidelity Investigation of Noise Control Mechanisms for a Quadrotor Biplane Tailsitter in Forward Flight”, AIAA SciTech Forum, Orlando, FL, January 2024.</li>
                     <li> Jayasundara, D. (2023). Aeroacoustic Implications of Installed Propeller Interactional Aerodynamics and Transient Propeller Motions [PhD thesis, University of Maryland]. College Park.</li>
                     <li> Jayasundara, D. and Baeder, J., “Aerodynamic and Aeroacoustic Analysis of a Quadrotor Biplane Tailsitter in Forward Flight”, Proceedings of the 79<sup>th</sup> Annual Forum, West Palm Beach, FL, May 2023.</li>
                     <li> Yang, S., Ware, C., Batther, J., He, C., Jayasundara, D., and Baeder, J., “eVTOL Rotor Performance and Acoustic Noise Study Using Unified Comprehensive Modeling and Acoustic Analysis”, Proceedings of the 79<sup>th</sup> Annual Forum, West Palm Beach, FL, May 2023.</li>
                     <li> Jayasundara, D. and Baeder, J. “Aerodynamic and Aeroacoustic Analysis of a Hovering Quadrotor Biplane Tailsitter", 10<sup>th</sup> Biennial Autonomous VTOL Technical Meeting and 10<sup>th</sup> Annual Electric VTOL Symposium, Mesa, AZ, January 2023.</li>
-                    <li> Jayasundara, D., Lee, B., Baeder, J., Goericke, J., Habana, Z., “Aerodynamic and Acoustic Analysis of a Multi-Rotor eVTOL Configuration", AIAA SCITECH Forum, National Harbor, MD, January 2023.</li>
+                    <li> Jayasundara, D., Lee, B., Baeder, J., Goericke, J., Habana, Z., “Aerodynamic and Acoustic Analysis of a Multi-Rotor eVTOL Configuration", AIAA SciTech Forum, National Harbor, MD, January 2023.</li>
                     <li> Jayasundara, D., Jung, Y.S., and Baeder, J., “Aerodynamic and Aeroacoustic Investigation of Wingtip-Mounted Tractor Propeller” Journal of the American Helicopter Society, 2022.</li>
                     <li> Jayasundara, D. and Baeder, J., “Aeroacoustic Analysis of Non-Periodic Propeller Motions”, Aeromechanics for Advanced Vertical Flight Technical Meeting 2022, held at Transformative Vertical Flight Meeting 2022, San Jose, CA, January 2022.</li>
                     <li> Jayasundara D., Jung, Y.S., and Baeder, J., “Aerodynamic and Aeroacoustic Analysis of a Full and Semi Span Wingtip-Mounted Propeller”, AIAA Aviation Forum, 2021 (Conference presentation).</li>
                     <li> Jayasundara, D., Jung, Y.S., and Baeder, J., “CFD and Aeroacoustic Analysis of Wingtip-Mounted Propellers”, Proceedings of the 76<sup>th</sup> Annual Forum, October 2020.</li>
                     <li> Jayasundara, H.M.A.D., Koliyabandara, S.M.N.H., and Wijesundara, K.K., “Wind Loads on Tall Buildings: A Comparative Study of the International Wind Codes and Numerical Simulation” Engineer: Journal of the Institution of Engineers, Sri Lanka, 51(3), 2018, pp.31–45</li>
                     <li> Koliyabandara, S.M.N.H., Jayasundara, H.M.A.D., and Wijesundara, K.K., “Evaluation of Different Turbulence Models in Determining Wind Loads on Tall buildings” Society of Structural Engineers, Sri Lanka-Annual Sessions, 2018.</li>
-                    <li> Koliyabandara, S. M. N. H., Jayasundara, H. M. A. D., and Wijesundara, K.K., "Analysis of wind loads on an irregular shaped tall building using numerical simulation." 8<sup>th</sup> International Conference on Structural Engineering and Construction Management, 2017</li>
+                    <li> Koliyabandara, S. M. N. H., Jayasundara, H. M. A. D., and Wijesundara, K.K., "Analysis of wind loads on an irregularly shaped tall building using numerical simulation." 8<sup>th</sup> International Conference on Structural Engineering and Construction Management, 2017</li>
                     <li> Jayasundara, H. M. A. D., Koliyabandara,S. M. N. H., and Wijesundara, K.K., "Comparative Study of Diagrid System and Shear Wall System for Resisting Wind Loads Using Different Design Approaches." Sri Lanka: Society of Structural Engineers (2017): 1-9.</li>
                 </ol>
                 
