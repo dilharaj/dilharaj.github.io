@@ -1,0 +1,268 @@
+<html>
+    <head>
+        <title> Dilhara Jayasundara</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <div class="banner" id="home">
+            <!-- Profile Picture Container -->
+            <div class="profile-container">
+                <img src="profile_pic7.png" class="profile-pic">
+                <div class="name">
+                    <h1>Dilhara Jayasundara</h1>
+                    <br>
+                    <p> Aeroacoustics engineer at Maglev Aero Inc.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Cambridge, MA</p> 
+                        <p><a href="mailto:dilharajayasundara.com" target="_blank"><i class="fas fa-envelope"></i> Email</a></p>
+                        <p><a href="https://scholar.google.com/citations?user=glrXgJEAAAA\&user=glrXgJEAAAAJ" target="_blank"><i class="fas fa-book"></i> Google Scholar</a></p>
+                        <p><a href="https://linkedin.com/in/dilhara-jayasundara" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+                        <p><a href="https://github.com/dilharaj" target="_blank"><i class="fab fa-github"></i> Github</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Center Content -->
+            <div class="center-content">
+                <p><b>Aerospace engineer</b> specializing in <b>aerodynamics</b>, <b>aeroacoustics</b>, and <b>CFD</b> with expertise in <b>rotorcraft design</b>. 
+                    My passion lies in advancing cutting-edge technologies in <b>propulsion systems</b>, <b>noise control</b>, and <b>aerodynamic 
+                    performance optimization</b>.
+                </p>
+                <br>
+                <p> I received my MS and PhD in Aerospace Engineering from the University of Maryland, under the guidance of Prof. James Baeder. My research focus was on the aeroacoustic implications of installed propeller interactional aerodynamics and transient propeller motions. 
+                    I completed my undergraduate studies in Civil Engineering at the University of Peradeniya, Sri Lanka.
+                </p>
+
+            </div>
+            <!--<div class="expertise">
+                <h3> Areas of Expertise</h2>
+                    <br>
+                <p>
+                    Aerodynamics, Aeroacoustics, CFD, Rotorcraft Design, Machine Learning, Structures, Fluid-Structure Interactions, Aeroelasticity, Numerical Methods, Dynamics and Controls. 
+                </p>
+
+            </div> -->
+            <!-- Navbar -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#port">Portfolio</a></li>
+                    <li><a href="#pubs">Publications</a></li>
+                    <li><a href="#story">My Story </a></li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img src="profile_pic5.png" class="profile-pic">
+                <div class="name">
+                    <h1>Dilhara Jayasundara</h1>
+                </div>
+            </div>
+        
+        </div>
+
+         <!-- Portfolio -->
+         <div class="portfolio" id="port">
+            <div class="font">
+                <h1> Portfolio</h1>
+                <br>
+                <h2> Tip-Driven Ducted Rotor</h2>
+                <br>
+                <p> Open rotor and conventional ducted rotor propulsion systems are prone to inefficiencies at the blade tips as the high-pressure air at the bottom of the blade leak towards the low-pressure region at the top of the blade, forming a tip-vortex. 
+                    These blade tip-vortices not only reduce the performance of the propulsion system as they deprive the rotor of thrust at the most critical part of the blade, but also lead to high aircraft noise emissions as the vortices interact with other parts of the airframe or even the following blade.
+                    At MagLev Aero, we are working to resolve this issue by developing a tip-driven ducted rotor system that prevents the tip vortex formation. The CFD analysis I conducted using a Lattice Boltzmann Method (LBM) solver shows <b>more than 20% improvement in performance</b> compared to a conventional ducted rotor.
+                    The vorticity iso-surfaces for the two cases shown below is a visual testament to the enhancement in aerodynamic performance of the tip-driven propulsion system. For more details, visit <a href="https://maglevaero.com/" target="_blank" class="custom-link" rel="noopener noreferrer">MagLev Aero</a>.
+                </p>
+            </div>
+            <br>
+            <div class="figure">
+                <img src="hub_drive.gif" alt="Figure 1">
+                <p>Conventional ducted rotor</p>
+            </div>
+            <div class="figure">
+                <img src="tip_drive.gif" alt="Figure 2">
+                <p>Tip-driven ducted rotor</p>
+            </div>
+
+            <div class="font">
+                <br>
+                <h2> Quadrotor Biplane Tailsitter</h2>
+                <br>
+                <p> During the final years of my PhD, I analyzed the Common Research Configuration (CRC) quadrotor biplane tailsitter model using the in-house hybrid RANS-LES CFD solver Mercury to investigate its performance and the noise footprint in hover and forward flight. The aircraft was developed in a collaborative effort 
+                    between the University of Maryland and the U.S. Army Combat Capabilities Development Command Army Research Laboratory (ARL). This in-depth study revealed the intricacies of the rotor-airframe aerodynamic interaction and how it shapes the noise footprint of the aircraft. In an attempt to reduce the noise emissions of the
+                    aircraft, we resorted to synchrophasing of the rotors (rotors having predetermined phase offsets between each other), which showed success especially in hover.    
+                </p>
+            </div>
+            <br>
+            <div class="figures-crc">
+                <div class="figure">
+                    <br><br><br>
+                    <img src="crc_geo.jpg" alt="Figure 1"  >
+                    <p>CRC-20 aircraft</p>
+                </div>
+                <div class="figure">
+                    <img src="crc_hover.gif" alt="Figure 2" >
+                    <p> Vorticity iso-surfaces in hover</p>
+                </div>
+                <div class="figure">
+                    <br><br><br><br>
+                    <img src="crc_ff_2.gif" alt="Figure 2" >
+                    <p> Vorticity iso-surfaces in forward flight</p>
+                </div>
+            </div>
+
+            <div class="font">
+                <br>
+                <h2> Wingtip-Mounted Propeller</h2>
+                <br>
+                <p> 
+                    Among the first projects I undertook at Maryland was the CFD and aeroacoustic analysis of a wingtip-mounted propeller geometry, provided by the 1st Workshop for Integrated Propeller Predictions (WIPP). Our CFD predictions using the in-house solver perfectly matched the wind tunnel test data and the study emphasized the significance
+                     of the wing as an aircraft noise source when placed in the wake of a propeller. The noise footprint increases not only because of the interaction between the propeller wake and the wing but also due to the unsteadiness in the propeller blade loading caused by its interaction with the wing upwash. The noise foorptints given below shows 
+                     how the wing is louder than the propeller when the porpeller axis is aligned with the freestream.   
+                </p>
+            </div>
+            <br>
+            <div class="figures-crc">
+                <div class="figure">
+                    <br><br>
+                    <img src="Propeller_wake.png" alt="Figure 1"  >
+                    <p>Vorticity iso-surfaces</p>
+                </div>
+                <div class="figure">
+                    <br>
+                    <img src="wingmovie_top.gif" alt="Figure 2" >
+                    <p> Surface pressure fluctuations</p>
+                </div>
+                <div class="figure">
+                    <img src="prop00_1.png" alt="Figure 2" >
+                    <p> Noise footprint of propeller</p>
+                </div>
+                <div class="figure">
+                    <img src="wing00_1.png" alt="Figure 2" >
+                    <p> Noise footprint of wing</p>
+                </div>
+            </div>
+            
+            <div class="font">
+                <br>
+                <h2> Transient Aeroacoustic Solver</h2>
+                <br>
+                <p> 
+                    Aircraft noise footprints are usually analyzed for periodic maneuvers such as hover and forward flight, and therefore, the acoustic solvers are designed to with the assumption of periodicity in the sound pressure signals. However, in the eVTOL era of aviation, noise footprints of non-periodic aircraft maneuvers also need to be analyzed as they are expected to occur in dense urban environments.
+                    To analyze such maneuvers, I developed a transient aeroacoustic solver (ACUM-3) using C++, CUDA, and MPI. The core computation was parallelied on GPU and parts of the time history was parallelized on multiple CPUs so that the computation can be run on an HPC to reduce the computation time. A new algorithm was developed to achieve the parallelization of the time dimension. The tool was used to analyze 
+                    the transient noise footprint of a propeller transitioning from hover to forward flight.  
+
+                </p>
+            </div>
+            <br>
+            <div class="figures-crc">
+                <div class="figure">
+                    <img src="trans.gif" alt="Figure 1"  >
+                    <p>Variation of noise footprint with propeller transition</p>
+                </div>
+            </div>
+           
+            <div class="font">
+                <br>
+                <h2> Alicorn and Horizon Aircraft</h2>
+                <br>
+                <p> 
+                    At Maryland, I led the graduate student design team at the 38<sup>th</sup> Vertical Flight Society (VFS) Student Design Competition and we won first place for our tandem rotor aircraft, Alicorn. We were asked to design an unmanned VTOL aircraft with a payload capacity of 50 kg and a range of 200 km for a medical equipment distribution mission. 
+                    Our team came up with a detailed engineering design amidst a Covid lockdown within a course of 15 weeks. I performed the aerodynamic design of the rotor system and the fuselage with a comprehensive CFD analysis that reduced the aircraft drag by 50%. For more information about the competition, <a href="https://eng.umd.edu/news/story/umd-teams-sweep-2021-vfs-student-design-competition" target="_blank" class="custom-link" rel="noopener noreferrer">click here</a>.   
+                    <br><br>
+                    Furthermore, I participated in the 3<sup>rd</sup> VFS Design-Build-Vertical Flight (DBVF) Competition, where we designed and built the quadrotor tailsitter aircraft, Horizon. I conducted the aerodynamic design of the wings and through CFD, I improved the aircraft performance by optimizing the winglets for high-speed flight. We took second place in the competition. For more details,
+                     <a href="https://aero.umd.edu/news/story/umd-takes-second-at-vfs-designbuildverticalflight-competition" target="_blank" class="custom-link" rel="noopener noreferrer">click here</a>. 
+                </p>
+            </div>
+            <br>
+            <div class="figures-crc">
+                <div class="figure">
+                    <img src="alicorn5.png" alt="Figure 1"  >
+                    <p>Alicorn</p>
+                </div>
+                <div class="figure">
+                    <img src="dbvf3.jpg" alt="Figure 1"  >
+                    <p>Horizon</p>
+                </div>
+            </div>
+           
+        </div>
+
+
+        <div class="publications" id="pubs">
+            <div class="font">
+                <h1> Publications</h1>
+                <br>
+                <br>
+
+                <ol>
+                    <li> Jayasundara, D., and Baeder, J., “Aerodynamic and Aeroacoustic Analysis of a Quadrotor Biplane Tailsitter” Journal of the American Helicopter Society (under review).</li>
+                    <li> Arias, P., Jayasundara, D. and Baeder, J., “Aeroacoustic Analysis of a Quadrotor Biplane Tailsitter in Climb and Synchrophased Hover”, 6<sup>th</sup> Decennial VFS Aeromechanics Specialists' Conference, Santa Clara, CA, February 2024.</li>
+                    <li> Jayasundara, D., Arias, P. and Baeder, J.D., “Multi-Fidelity Investigation of Noise Control Mechanisms for a Quadrotor Biplane Tailsitter in Forward Flight”, AIAA SCITECH Forum, Orlando, FL, January 2024.</li>
+                    <li> Jayasundara, D. (2023). Aeroacoustic Implications of Installed Propeller Interactional Aerodynamics and Transient Propeller Motions [PhD thesis, University of Maryland]. College Park.</li>
+                    <li> Jayasundara, D. and Baeder, J., “Aerodynamic and Aeroacoustic Analysis of a Quadrotor Biplane Tailsitter in Forward Flight”, Proceedings of the 79<sup>th</sup> Annual Forum, West Palm Beach, FL, May 2023.</li>
+                    <li> Yang, S., Ware, C., Batther, J., He, C., Jayasundara, D., and Baeder, J., “eVTOL Rotor Performance and Acoustic Noise Study Using Unified Comprehensive Modeling and Acoustic Analysis”, Proceedings of the 79<sup>th</sup> Annual Forum, West Palm Beach, FL, May 2023.</li>
+                    <li> Jayasundara, D. and Baeder, J. “Aerodynamic and Aeroacoustic Analysis of a Hovering Quadrotor Biplane Tailsitter", 10<sup>th</sup> Biennial Autonomous VTOL Technical Meeting and 10<sup>th</sup> Annual Electric VTOL Symposium, Mesa, AZ, January 2023.</li>
+                    <li> Jayasundara, D., Lee, B., Baeder, J., Goericke, J., Habana, Z., “Aerodynamic and Acoustic Analysis of a Multi-Rotor eVTOL Configuration", AIAA SCITECH Forum, National Harbor, MD, January 2023.</li>
+                    <li> Jayasundara, D., Jung, Y.S., and Baeder, J., “Aerodynamic and Aeroacoustic Investigation of Wingtip-Mounted Tractor Propeller” Journal of the American Helicopter Society, 2022.</li>
+                    <li> Jayasundara, D. and Baeder, J., “Aeroacoustic Analysis of Non-Periodic Propeller Motions”, Aeromechanics for Advanced Vertical Flight Technical Meeting 2022, held at Transformative Vertical Flight Meeting 2022, San Jose, CA, January 2022.</li>
+                    <li> Jayasundara D., Jung, Y.S., and Baeder, J., “Aerodynamic and Aeroacoustic Analysis of a Full and Semi Span Wingtip-Mounted Propeller”, AIAA Aviation Forum, 2021 (Conference presentation).</li>
+                    <li> Jayasundara, D., Jung, Y.S., and Baeder, J., “CFD and Aeroacoustic Analysis of Wingtip-Mounted Propellers”, Proceedings of the 76<sup>th</sup> Annual Forum, October 2020.</li>
+                    <li> Jayasundara, H.M.A.D., Koliyabandara, S.M.N.H., and Wijesundara, K.K., “Wind Loads on Tall Buildings: A Comparative Study of the International Wind Codes and Numerical Simulation” Engineer: Journal of the Institution of Engineers, Sri Lanka, 51(3), 2018, pp.31–45</li>
+                    <li> Koliyabandara, S.M.N.H., Jayasundara, H.M.A.D., and Wijesundara, K.K., “Evaluation of Different Turbulence Models in Determining Wind Loads on Tall buildings” Society of Structural Engineers, Sri Lanka-Annual Sessions, 2018.</li>
+                    <li> Koliyabandara, S. M. N. H., Jayasundara, H. M. A. D., and Wijesundara, K.K., "Analysis of wind loads on an irregular shaped tall building using numerical simulation." 8<sup>th</sup> International Conference on Structural Engineering and Construction Management, 2017</li>
+                    <li> Jayasundara, H. M. A. D., Koliyabandara,S. M. N. H., and Wijesundara, K.K., "Comparative Study of Diagrid System and Shear Wall System for Resisting Wind Loads Using Different Design Approaches." Sri Lanka: Society of Structural Engineers (2017): 1-9.</li>
+                </ol>
+                
+            </div>
+            
+        </div>
+
+
+        <div class="mystory" id="story">
+            <div class="font">
+                <h1> My Story</h1>
+                <br>
+                <p>
+                    I grew up in Sri Lanka, a beautiful island often called the "Pearl of the Indian Ocean." My love for math and science began at a young age and eventually led me to pursue a bachelor’s degree in civil engineering at the University of Peradeniya. 
+                    During my time there, I discovered a passion for aerodynamics, particularly through my final-year research project on wind loads on tall buildings, guided by Prof. Kushan Wijesundara. Inspired by binge-watching Mayday: Air Crash Investigations, I developed a deep interest in aeronautics and decided to pursue higher studies in the United States.
+                    <br><br>
+                    In 2018, I joined the Computational Fluid Dynamics (CFD) Research Lab at the University of Maryland, where I was fortunate to work under the mentorship of Prof. James Baeder. 
+                    After completing my PhD in 2023, I began my professional journey with Maglev Aero, a cutting-edge company developing electric propulsion systems powered by magnetic levitation.
+                    <br><br></ber>
+                    During my years in Maryland, I also embraced photography, capturing memories as I explored much of the U.S. with friends. Here are some of the pictures from those travels—each one holds a cherished memory that I will treasure forever.        
+                </p>
+                
+               
+            </div>
+            
+            <!-- Photo Grid -->
+            <div class="figures-crc"> 
+                <div class="column1">
+                    <img src="grinnel.jpg" style="width:100%">
+                    <p> <br> Upper Grinnell Lake, Montana</p>
+                </div>
+                <div class="column2">
+                    <img src="outerbanks2.jpeg" style="width:100%">
+                    <p> <br>  Outer Banks, North Carolina </p>
+                    <br>
+                    <img src="sealions2.jpeg" style="width:100%">
+                    <p> <br>  Seward, Alaska  </p>
+                </div>            
+                <div class="column2">
+                    <img src="lava.jpeg" style="width:100%">
+                    <p> <br> Kīlauea volcano, Hawaii</p>
+                    <br>
+                    <img src="liberty.jpeg" style="width:100%">
+                    <p> <br> Statue of Liberty</p>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+    
+
+   
+    </body>
+</html>
